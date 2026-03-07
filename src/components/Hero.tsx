@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -19,15 +19,6 @@ export default function Hero() {
 
             <div className="container relative z-10 max-w-5xl mx-auto px-4 sm:px-6 flex flex-col items-center text-center">
 
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.6 }}
-                    className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-sm font-semibold mb-8 shadow-2xl"
-                >
-                    <ShieldCheck className="w-5 h-5 text-blue-400" />
-                    <span className="text-white tracking-widest uppercase text-xs">The Jayalakshmi Water Agency Standard</span>
-                </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
