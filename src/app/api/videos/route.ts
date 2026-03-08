@@ -1,9 +1,13 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-// Define the path to our local JSON store
-const DATA_FILE_PATH = path.join(process.cwd(), 'data', 'videos.json');
+// Define the path to our local JSON store. Vercel requires writing to /tmp
+const DATA_FILE_PATH = process.env.NODE_ENV === 'production'
+    ? '/tmp/videos.json'
+    : path.join(process.cwd(), 'data', 'videos.json');
 
 // Interface for our data structure
 interface VideoData {

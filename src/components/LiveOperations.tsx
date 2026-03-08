@@ -11,7 +11,13 @@ export default function LiveOperations() {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-                const res = await fetch("https://jayalakshmiwateragency.vercel.app/api/videos");
+                const res = await fetch("https://jayalakshmiwateragency.vercel.app/api/videos", {
+                    cache: 'no-store',
+                    headers: {
+                        'Cache-Control': 'no-cache',
+                        'Pragma': 'no-cache'
+                    }
+                });
                 if (!res.ok) throw new Error("Failed to fetch");
                 const data = await res.json();
                 setVideos(data.videos || []);
