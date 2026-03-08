@@ -63,7 +63,7 @@ export default function About() {
                                 if (company) text += ` from ${company}`;
                                 text += `.\n\n*Delivery Location:*\n${location}\n\n*Requirement:*\n${requirement}`;
 
-                                window.open(`https://wa.me/919876543210?text=${encodeURIComponent(text)}`, '_blank');
+                                window.open(`https://wa.me/919500130717?text=${encodeURIComponent(text)}`, '_blank');
                             }}>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     <div>

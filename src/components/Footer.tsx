@@ -66,6 +66,10 @@ export default function Footer() {
                         <ul className="flex flex-col gap-4">
                             <li className="flex items-center gap-3">
                                 <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                                9,000 Litres Supply
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                                 12,000 Litres Supply
                             </li>
                             <li className="flex items-center gap-3">
@@ -102,7 +106,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <span className="block text-white font-medium mb-1">Hotline (24/7)</span>
-                                    <span className="text-gray-400">+91 98765 43210</span>
+                                    <span className="text-gray-400">+91 95001 30717<br />+91 98413 57799</span>
                                 </div>
                             </li>
                             <li className="flex items-center gap-4">
@@ -111,7 +115,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <span className="block text-white font-medium mb-1">Email Support</span>
-                                    <span className="text-gray-400">supply@jayalakshmiwateragency.com</span>
+                                    <span className="text-gray-400">JayalakshmiWaterSupplychennai@gmail.com</span>
                                 </div>
                             </li>
                         </ul>

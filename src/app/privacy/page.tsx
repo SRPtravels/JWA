@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
                         <p className="mb-4">We do not share, sell, rent, or trade any of your information with third parties for their promotional purposes.</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">4. Contact Us</h2>
-                        <p>If you have questions or comments about this notice, you may email us at supply@jayalakshmiwateragency.com.</p>
+                        <p>If you have questions or comments about this notice, you may email us at JayalakshmiWaterSupplychennai@gmail.com.</p>
                     </div>
                 </div>
             </div>

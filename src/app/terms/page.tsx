@@ -17,7 +17,7 @@ export default function TermsOfService() {
                         <p className="mb-4">While we ensure the highest standards of purity and delivery punctuality, Jayalakshmi Water Agency is not liable for indirect damages arising from unforeseen delays or incidents beyond our reasonable control.</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">4. Contact Information</h2>
-                        <p>For any inquiries regarding these terms, contact us at supply@jayalakshmiwateragency.com.</p>
+                        <p>For any inquiries regarding these terms, contact us at JayalakshmiWaterSupplychennai@gmail.com.</p>
                     </div>
                 </div>
             </div>

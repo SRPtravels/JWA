@@ -6,6 +6,11 @@ import { Truck, Factory, Home, ArrowRight } from "lucide-react";
 const services = [
     {
         icon: Home,
+        title: "9,000 Litres",
+        description: "Ideal for small households, boutique stores, and limited space requirements.",
+    },
+    {
+        icon: Home,
         title: "12,000 Litres",
         description: "Compact delivery optimized for retail outlets, small commercial establishments, and residential units.",
     },
@@ -30,7 +35,7 @@ export default function Services() {
                     <p className="text-gray-600">Tailored water management and supply solutions designed for uncompromising quality and reliability.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
@@ -46,7 +51,7 @@ export default function Services() {
                             <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                             <a
-                                href={`https://wa.me/919876543210?text=${encodeURIComponent(`Hello, I am interested in your ${service.title} service.`)}`}
+                                href={`https://wa.me/919500130717?text=${encodeURIComponent(`Hello, I am interested in your ${service.title} service.`)}`}
                                 target="_blank"
                                 className="inline-flex w-full items-center justify-center font-semibold text-white bg-black hover:bg-gray-800 px-6 py-3 rounded-xl transition-all shadow-md group-hover:shadow-lg"
                             >

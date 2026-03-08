@@ -60,7 +60,7 @@ export default function Navbar() {
                         ))}
                     </div>
                     <Link
-                        href="https://wa.me/919876543210?text=Hello%20Jayalakshmi%20Water%20Agency%2C%20I%20would%20like%20to%20book%20a%20water%20supply%20service."
+                        href="https://wa.me/919500130717?text=Hello%20Jayalakshmi%20Water%20Agency%2C%20I%20would%20like%20to%20book%20a%20water%20supply%20service."
                         target="_blank"
                         className={`px-8 py-3 rounded-full font-bold transition-all shadow-md hover:scale-105 ${scrolled
                             ? 'bg-blue-600 text-white hover:bg-blue-700'
@@ -103,7 +103,7 @@ export default function Navbar() {
                             ))}
                             <div className="pt-4 mt-2 border-t border-gray-100">
                                 <Link
-                                    href="https://wa.me/919876543210?text=Hello%20Jayalakshmi%20Water%20Agency%2C%20I%20would%20like%20to%20book%20a%20water%20supply%20service."
+                                    href="https://wa.me/919500130717?text=Hello%20Jayalakshmi%20Water%20Agency%2C%20I%20would%20like%20to%20book%20a%20water%20supply%20service."
                                     target="_blank"
                                     onClick={() => setIsOpen(false)}
                                     className="bg-blue-600 text-white block px-6 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg"
