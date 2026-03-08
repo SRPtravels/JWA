@@ -8,13 +8,13 @@ export default function TermsOfService() {
                         <p className="mb-4">Last Updated: {new Date().toLocaleDateString()}</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">1. Acceptance of Terms</h2>
-                        <p className="mb-4">By accessing or using the services provided by Jayalakshmi Water Agency, you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.</p>
+                        <p className="mb-4">By accessing or using the services provided by Jayalakshmi Water Supply, you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">2. Service Usage</h2>
                         <p className="mb-4">Our services, primarily consisting of bulk water supply and delivery, are subject to availability and operating capacity. We reserve the right to refuse service based on logistical constraints.</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">3. Liability</h2>
-                        <p className="mb-4">While we ensure the highest standards of purity and delivery punctuality, Jayalakshmi Water Agency is not liable for indirect damages arising from unforeseen delays or incidents beyond our reasonable control.</p>
+                        <p className="mb-4">While we ensure the highest standards of purity and delivery punctuality, Jayalakshmi Water Supply is not liable for indirect damages arising from unforeseen delays or incidents beyond our reasonable control.</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">4. Contact Information</h2>
                         <p>For any inquiries regarding these terms, contact us at JayalakshmiWaterSupplychennai@gmail.com.</p>

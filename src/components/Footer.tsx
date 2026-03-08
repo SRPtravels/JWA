@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="flex flex-col gap-6 lg:pr-8">
                         <Link href="/" className="inline-block">
                             <span className="font-bold text-3xl tracking-tight leading-tight text-white">
-                                Jayalakshmi <span className="text-blue-500">Water Agency</span>
+                                Jayalakshmi <span className="text-blue-500">Water Supply</span>
                             </span>
                         </Link>
                         <p className="text-gray-400 leading-relaxed">
@@ -115,7 +115,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <span className="block text-white font-medium mb-1">Email Support</span>
-                                    <span className="text-gray-400">JayalakshmiWaterSupplychennai@gmail.com</span>
+                                    <span className="text-gray-400 break-all">JayalakshmiWaterSupplychennai@gmail.com</span>
                                 </div>
                             </li>
                         </ul>
@@ -124,7 +124,7 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} Jayalakshmi Water Agency. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Jayalakshmi Water Supply. All rights reserved.</p>
                     <div className="flex items-center gap-6">
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

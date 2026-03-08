@@ -22,7 +22,7 @@ export default function About() {
                         transition={{ duration: 0.5, ease: "easeInOut" }}
                         className="lg:w-1/2"
                     >
-                        <h2 className="text-4xl font-bold mb-6">The Jayalakshmi Water Agency Standard.</h2>
+                        <h2 className="text-4xl font-bold mb-6">The Jayalakshmi Water Supply Standard.</h2>
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                             We don't just supply water; we deliver peace of mind. With stringent hygiene protocols for storage and transit, a GPS-tracked fleet ensuring on-time arrival, and highly trained operators using specialized equipment, we guarantee seamless offloading and uncompromising quality.
                         </p>
@@ -59,7 +59,7 @@ export default function About() {
                                 const location = formData.get('location');
                                 const requirement = formData.get('requirement');
 
-                                let text = `*New Inquiry:*\nHello Jayalakshmi Water Agency, I am ${name}`;
+                                let text = `*New Inquiry:*\nHello Jayalakshmi Water Supply, I am ${name}`;
                                 if (company) text += ` from ${company}`;
                                 text += `.\n\n*Delivery Location:*\n${location}\n\n*Requirement:*\n${requirement}`;
 

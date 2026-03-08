@@ -30,7 +30,7 @@ export default function LiveOperations() {
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-4xl font-bold mb-4">Our Process in Motion</h2>
                     <p className="text-gray-600 text-lg">
-                        Real-time updates from our latest delivery operations and quality checks. Witness the Jayalakshmi Water Agency standard of excellence.
+                        Real-time updates from our latest delivery operations and quality checks. Witness the Jayalakshmi Water Supply standard of excellence.
                     </p>
                 </div>
 

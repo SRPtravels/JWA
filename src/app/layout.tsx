@@ -20,14 +20,14 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Jayalakshmi Water Agency | Premium Water Solutions",
+  title: "Jayalakshmi Water Supply | Premium Water Solutions",
   description: "Delivering clean, high-capacity water supply to apartments, commercial hubs, and construction sites in Chennai with precision and punctuality.",
-  keywords: ["bulk water supply", "water delivery chennai", "jayalakshmi water agency", "commercial water supply", "water tanker services"],
+  keywords: ["bulk water supply", "water delivery chennai", "jayalakshmi water supply", "commercial water supply", "water tanker services"],
   openGraph: {
-    title: "Jayalakshmi Water Agency | Premium Water Solutions",
+    title: "Jayalakshmi Water Supply | Premium Water Solutions",
     description: "Reliable, high-capacity water supply for residential, commercial & industrial sectors.",
     url: "https://jayalakshmiwateragency.com",
-    siteName: "Jayalakshmi Water Agency",
+    siteName: "Jayalakshmi Water Supply",
     locale: "en_IN",
     type: "website",
   },

@@ -11,7 +11,7 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <img
                     src="/water-trucks.jpg"
-                    alt="Jayalakshmi Water Agency Fleet"
+                    alt="Jayalakshmi Water Supply Fleet"
                     className="w-full h-full object-cover opacity-60"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/90" />

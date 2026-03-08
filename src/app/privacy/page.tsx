@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
                         <p className="mb-4">Last Updated: {new Date().toLocaleDateString()}</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">1. Information We Collect</h2>
-                        <p className="mb-4">At Jayalakshmi Water Agency, we collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our services, such as when you fill out our contact form or chat with us on WhatsApp.</p>
+                        <p className="mb-4">At Jayalakshmi Water Supply, we collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our services, such as when you fill out our contact form or chat with us on WhatsApp.</p>
 
                         <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">2. How We Use Your Information</h2>
                         <p className="mb-4">We use the information we collect or receive to communicate with you, fulfill and manage your orders, and provide you with customer service.</p>

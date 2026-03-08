@@ -34,12 +34,12 @@ export default function Navbar() {
                     <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-1 shadow-md">
                         <img
                             src="/waterlogo.png"
-                            alt="Jayalakshmi Water Agency"
+                            alt="Jayalakshmi Water Supply"
                             className="w-full h-full object-cover rounded-full"
                         />
                     </div>
                     <span className={`font-bold text-xl md:text-2xl tracking-tight leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-                        Jayalakshmi <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Water Agency</span>
+                        Jayalakshmi <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Water Supply</span>
                     </span>
                 </Link>
 
