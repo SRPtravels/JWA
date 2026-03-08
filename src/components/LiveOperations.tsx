@@ -11,7 +11,7 @@ export default function LiveOperations() {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-                const res = await fetch("/api/videos");
+                const res = await fetch("https://yalakshmiwateragency.vercel.app/api/videos");
                 if (!res.ok) throw new Error("Failed to fetch");
                 const data = await res.json();
                 setVideos(data.videos || []);

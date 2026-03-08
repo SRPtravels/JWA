@@ -15,7 +15,7 @@ export default function AdminPage() {
         setLoading(true);
         setError("");
         try {
-            const res = await fetch("/api/videos");
+            const res = await fetch("https://yalakshmiwateragency.vercel.app/api/videos");
             if (!res.ok) throw new Error("Failed to fetch videos");
             const data = await res.json();
             setVideos(data.videos || []);
@@ -63,7 +63,7 @@ export default function AdminPage() {
         const formattedUrl = formatYouTubeUrl(newUrl);
 
         try {
-            const res = await fetch("/api/videos", {
+            const res = await fetch("https://yalakshmiwateragency.vercel.app/api/videos", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ url: formattedUrl }),
@@ -86,7 +86,7 @@ export default function AdminPage() {
         setSuccessMsg("");
 
         try {
-            const res = await fetch("/api/videos", {
+            const res = await fetch("https://yalakshmiwateragency.vercel.app/api/videos", {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ url: urlToDelete }),
