@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const images = [
@@ -17,33 +16,83 @@ const images = [
     "/img/Snapchat-1977989633.jpg.jpeg"
 ];
 
+// Combine arrays to allow for a continuous loop
+const row1 = [...images, ...images];
+const row2 = [...[...images].reverse(), ...[...images].reverse()];
+const row3 = [...images.slice(5), ...images.slice(0, 5), ...images.slice(5), ...images.slice(0, 5)];
+
 export default function Gallery() {
     return (
-        <section className="py-24 bg-white text-black">
-            <div className="container px-4 sm:px-6 mx-auto">
-                <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-4xl font-bold mb-4">Our Operations in Action</h2>
-                    <p className="text-gray-600">A glimpse into our daily deliveries, specialized fleet, and commitment to reliable service.</p>
+        <section className="py-24 bg-gray-50 text-black overflow-hidden relative">
+            <style>{`
+                @keyframes marquee {
+                    0% { transform: translateX(0%); }
+                    100% { transform: translateX(-50%); }
+                }
+                @keyframes marquee-reverse {
+                    0% { transform: translateX(-50%); }
+                    100% { transform: translateX(0%); }
+                }
+                .marquee {
+                    display: flex;
+                    width: max-content;
+                    animation: marquee 40s linear infinite;
+                }
+                .marquee-reverse {
+                    display: flex;
+                    width: max-content;
+                    animation: marquee-reverse 45s linear infinite;
+                }
+                .marquee-fast {
+                    display: flex;
+                    width: max-content;
+                    animation: marquee 35s linear infinite;
+                }
+                /* Pause on hover */
+                .marquee-wrapper:hover > div {
+                    animation-play-state: paused;
+                }
+            `}</style>
+            
+            <div className="container px-4 sm:px-6 mx-auto mb-16 relative z-10">
+                <div className="text-center max-w-2xl mx-auto">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Operations in Action</h2>
+                    <p className="text-gray-600 text-lg">A glimpse into our daily deliveries, specialized fleet, and commitment to reliable service.</p>
                 </div>
-                
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {images.map((src, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.4, delay: (index % 4) * 0.1 }}
-                            className="relative w-full aspect-square rounded-2xl overflow-hidden group shadow-sm hover:shadow-xl transition-all"
-                        >
-                            <img
-                                src={src}
-                                alt={`Gallery Image ${index + 1}`}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                            />
-                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </motion.div>
-                    ))}
+            </div>
+            
+            <div className="flex flex-col gap-6 relative z-10">
+                {/* Row 1: Left */}
+                <div className="marquee-wrapper">
+                    <div className="marquee gap-6">
+                        {row1.map((src, index) => (
+                            <div key={`r1-${index}`} className="w-[280px] md:w-[350px] aspect-[4/3] flex-shrink-0 rounded-2xl overflow-hidden shadow">
+                                <img src={src} alt="Gallery image" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Row 2: Right */}
+                <div className="marquee-wrapper">
+                    <div className="marquee-reverse gap-6">
+                        {row2.map((src, index) => (
+                            <div key={`r2-${index}`} className="w-[280px] md:w-[350px] aspect-[4/3] flex-shrink-0 rounded-2xl overflow-hidden shadow">
+                                <img src={src} alt="Gallery image" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Row 3: Left */}
+                <div className="marquee-wrapper">
+                    <div className="marquee-fast gap-6">
+                        {row3.map((src, index) => (
+                            <div key={`r3-${index}`} className="w-[280px] md:w-[350px] aspect-[4/3] flex-shrink-0 rounded-2xl overflow-hidden shadow">
+                                <img src={src} alt="Gallery image" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

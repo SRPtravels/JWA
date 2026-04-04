@@ -25,9 +25,10 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.1 }}
                 >
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-outfit font-extrabold tracking-tight mb-8 leading-[1.05] drop-shadow-lg">
-                        Premium Bulk Water <br className="hidden sm:block" />
-                        <span className="text-blue-400">Reliable Supply.</span>
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-outfit font-extrabold tracking-tight mb-8 leading-[1.1] drop-shadow-lg">
+                        Premium Reliable <br className="hidden md:block" />
+                        <span className="text-blue-400">Bulk Water Supply</span> <br className="hidden md:block" />
+                        & <span className="text-green-400">Sewage Solutions</span>.
                     </h1>
                 </motion.div>
 
@@ -35,21 +36,9 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
-                    className="text-lg md:text-2xl text-gray-200 mb-6 max-w-3xl leading-relaxed font-medium drop-shadow-md"
+                    className="text-lg md:text-2xl text-gray-200 mb-12 max-w-3xl leading-relaxed font-medium drop-shadow-md"
                 >
-                    Delivering clean, high-capacity water supply to apartments, commercial hubs, and construction sites with precision, reliability, and punctuality.
-                </motion.p>
-
-                <motion.p
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.25 }}
-                    className="text-base md:text-lg text-gray-300 mb-12 max-w-3xl leading-relaxed font-medium drop-shadow-md bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-sm"
-                >
-                    <span className="text-white font-bold inline-flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                        New Services:
-                    </span> We also provide comprehensive <span className="text-blue-400 font-semibold">Sewage Solutions</span> with 10KL capacity vehicles. Equipped with a fleet of 10+ lorries, we ensure compliant disposal and certified handling.
+                    Delivering clean, high-capacity water supply and complete sewage management to apartments, commercial hubs, and construction sites with precision, reliability, and punctuality.
                 </motion.p>
 
                 <motion.div
