@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Truck, Factory, Home, ArrowRight } from "lucide-react";
+import { Truck, Factory, Home, ArrowRight, Droplet } from "lucide-react";
 
 const services = [
     {
@@ -23,6 +23,16 @@ const services = [
         icon: Factory,
         title: "36,000 Litres",
         description: "Industrial-grade volume engineered for large-scale construction sites and major infrastructure projects.",
+    },
+    {
+        icon: Factory,
+        title: "48,000 Litres",
+        description: "Maximum capacity for massive industrial requirements, large townships, and heavy construction projects.",
+    },
+    {
+        icon: Droplet,
+        title: "Sewage Solutions (10 KL)",
+        description: "Compliant disposal and certified handling with a fleet of 10+ lorries of 10KL capacity for complete sewage management.",
     }
 ];
 
@@ -35,7 +45,7 @@ export default function Services() {
                     <p className="text-gray-600">Tailored water management and supply solutions designed for uncompromising quality and reliability.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}

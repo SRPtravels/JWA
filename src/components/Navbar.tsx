@@ -39,7 +39,7 @@ export default function Navbar() {
                         />
                     </div>
                     <span className={`font-bold text-xl md:text-2xl tracking-tight leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-                        Jayalakshmi <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Water Supply</span>
+                        <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">Jayalakshmi</span> <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Water Supply</span>
                     </span>
                 </Link>
 

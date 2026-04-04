@@ -35,9 +35,21 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
-                    className="text-lg md:text-2xl text-gray-200 mb-12 max-w-3xl leading-relaxed font-medium drop-shadow-md"
+                    className="text-lg md:text-2xl text-gray-200 mb-6 max-w-3xl leading-relaxed font-medium drop-shadow-md"
                 >
                     Delivering clean, high-capacity water supply to apartments, commercial hubs, and construction sites with precision, reliability, and punctuality.
+                </motion.p>
+
+                <motion.p
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.25 }}
+                    className="text-base md:text-lg text-gray-300 mb-12 max-w-3xl leading-relaxed font-medium drop-shadow-md bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-sm"
+                >
+                    <span className="text-white font-bold inline-flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        New Services:
+                    </span> We also provide comprehensive <span className="text-blue-400 font-semibold">Sewage Solutions</span> with 10KL capacity vehicles. Equipped with a fleet of 10+ lorries, we ensure compliant disposal and certified handling.
                 </motion.p>
 
                 <motion.div
